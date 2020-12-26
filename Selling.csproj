@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8D144A2-76C4-4FA1-A067-56AF85B63A39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Selling</RootNamespace>
+    <AssemblyName>Selling</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Liphsoft.Crypto.Argon2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Liphsoft.Crypto.Argon2.1.0.5\lib\net35\x86\Liphsoft.Crypto.Argon2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Common, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.Common.4.3.0\lib\net451\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SqlClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SqlClient.4.8.2\lib\net451\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TableDependency.SqlClient, Version=8.5.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\SqlTableDependency.8.5.8\lib\net451\TableDependency.SqlClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\databaseWacher.cs" />
+    <Compile Include="Model\master.cs" />
+    <Compile Include="Model\MasterInventory.cs" />
+    <Compile Include="Model\ScreensAccessProfile.cs" />
+    <Compile Include="Model\session.cs" />
+    <Compile Include="Model\UserSettingsTemplate.cs" />
+    <Compile Include="DAL\db.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Users\frm _UserSettingsProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Users\frm _UserSettingsProfile.Designer.cs">
+      <DependentUpon>frm _UserSettingsProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Users\frm_AccessProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Users\frm_AccessProfile.Designer.cs">
+      <DependentUpon>frm_AccessProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Users\frm_AccessProfileList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Users\frm_AccessProfileList.Designer.cs">
+      <DependentUpon>frm_AccessProfileList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_CustomerAndVendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_CustomerAndVendor.Designer.cs">
+      <DependentUpon>frm_CustomerAndVendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_CompanyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_CompanyInfo.Designer.cs">
+      <DependentUpon>frm_CompanyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_CustomersAndVendorsList .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_CustomersAndVendorsList .Designer.cs">
+      <DependentUpon>frm_CustomersAndVendorsList .cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_Drawer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_Drawer.Designer.cs">
+      <DependentUpon>frm_Drawer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_DrawerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_DrawerList.Designer.cs">
+      <DependentUpon>frm_DrawerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_Invoice.Designer.cs">
+      <DependentUpon>frm_Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Users\frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Users\frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_main.Designer.cs">
+      <DependentUpon>frm_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_master.Designer.cs">
+      <DependentUpon>frm_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_ProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_ProductList.Designer.cs">
+      <DependentUpon>frm_ProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_Products.Designer.cs">
+      <DependentUpon>frm_Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_StoreList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_StoreList.Designer.cs">
+      <DependentUpon>frm_StoreList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_stores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_stores.Designer.cs">
+      <DependentUpon>frm_stores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frm_Product Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frm_Product Category.Designer.cs">
+      <DependentUpon>frm_Product Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Users\frm_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Users\frm_User.Designer.cs">
+      <DependentUpon>frm_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Users\frm_UserSettingProfileList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Users\frm_UserSettingProfileList.Designer.cs">
+      <DependentUpon>frm_UserSettingProfileList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Users\frm_usersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Users\frm_usersList.Designer.cs">
+      <DependentUpon>frm_usersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporting\rpt_invoice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\rpt_invoice.Designer.cs">
+      <DependentUpon>rpt_invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\CostDistributionOption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="View\Users\frm _UserSettingsProfile.resx">
+      <DependentUpon>frm _UserSettingsProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Users\frm_AccessProfile.resx">
+      <DependentUpon>frm_AccessProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Users\frm_AccessProfileList.resx">
+      <DependentUpon>frm_AccessProfileList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_CompanyInfo.resx">
+      <DependentUpon>frm_CompanyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_CustomerAndVendor.resx">
+      <DependentUpon>frm_CustomerAndVendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_CustomersAndVendorsList .resx">
+      <DependentUpon>frm_CustomersAndVendorsList .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_Drawer.resx">
+      <DependentUpon>frm_Drawer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_DrawerList.resx">
+      <DependentUpon>frm_DrawerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_Invoice.resx">
+      <DependentUpon>frm_Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Users\frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_main.resx">
+      <DependentUpon>frm_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_master.resx">
+      <DependentUpon>frm_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_ProductList.resx">
+      <DependentUpon>frm_ProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_Products.resx">
+      <DependentUpon>frm_Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_StoreList.resx">
+      <DependentUpon>frm_StoreList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_stores.resx">
+      <DependentUpon>frm_stores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frm_Product Category.resx">
+      <DependentUpon>frm_Product Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Users\frm_User.resx">
+      <DependentUpon>frm_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Users\frm_UserSettingProfileList.resx">
+      <DependentUpon>frm_UserSettingProfileList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Users\frm_usersList.resx">
+      <DependentUpon>frm_usersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reporting\rpt_invoice.resx">
+      <DependentUpon>rpt_invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\CostDistributionOption.resx">
+      <DependentUpon>CostDistributionOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DAL\db.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>db.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DAL\db.dbml.layout">
+      <DependentUpon>db.dbml</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConvertNumberToText\ConvertNumberToText.csproj">
+      <Project>{760fa782-bc50-4410-b955-ed002fc5e744}</Project>
+      <Name>ConvertNumberToText</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\Liphsoft.Crypto.Argon2.1.0.5\build\Liphsoft.Crypto.Argon2.targets" Condition="Exists('packages\Liphsoft.Crypto.Argon2.1.0.5\build\Liphsoft.Crypto.Argon2.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Liphsoft.Crypto.Argon2.1.0.5\build\Liphsoft.Crypto.Argon2.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Liphsoft.Crypto.Argon2.1.0.5\build\Liphsoft.Crypto.Argon2.targets'))" />
+  </Target>
+</Project>
